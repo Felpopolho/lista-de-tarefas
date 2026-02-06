@@ -1,8 +1,8 @@
 <?php
 // config.php
-$host = 'localhost';
-$dbname = 'tarefas_fattocs'; 
-$user = 'root'; 
+$host = '';
+$dbname = ''; 
+$user = ''; 
 $pass = '';     
 
 try {
@@ -11,4 +11,5 @@ try {
 } catch (PDOException $e) {
     die("Erro na conexão: " . $e->getMessage());
 }
+
 ?>
