@@ -111,7 +111,7 @@ try {
                 <table class="table table-hover mb-0 align-middle">
                     <thead class="table-head-energy">
                         <tr>
-                            <th></th>
+                            <th style="width: 50px;"></th> <th>ID</th>
                             <th>Tarefa</th>
                             <th>Custo (R$)</th>
                             <th>Data Limite</th>
@@ -129,6 +129,7 @@ try {
                             ?>
                                 <tr class="draggable-item <?= $classe_linha ?>" data-id="<?= $tarefa['id'] ?>" id="linha-<?= $tarefa['id'] ?>">
                                     <td class="text-center"><i class="bi bi-grip-vertical text-muted fs-5"></i></td>
+                                    <td><span class="badge bg-dark border border-secondary"><?= $tarefa['id'] ?></span></td>
                                     <td>
                                         <span class="d-block view-mode"><?= htmlspecialchars($tarefa['nome']) ?></span>
                                         <input type="text" class="form-control form-control-sm edit-mode d-none" value="<?= htmlspecialchars($tarefa['nome']) ?>">
